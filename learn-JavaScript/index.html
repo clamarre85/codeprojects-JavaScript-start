@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript</title>
+
+    <link rel="icon" href="/images/javascript-icon.ico">
+
+    <link rel="stylesheet" href="/Learn-js/styles.css">
+
+</head>
+<body>
+    
+    <h1><u>JavaScript Tutorial</u></h1>
+    <p>The world's most popular programming language 
+        <br>
+        The programming language of the Web
+        <br>
+        Easy to learn 
+        <br>
+        Let's learn JavaScript using <b>w<sup>3</sup> schools</b> from basic to advance 
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>My First JavaScript</h2>
+    <br>
+    <button type="button" onclick="displayDateTime()">Click Me For Current Date & Time</button>
+    <h4 id="demo"></h4>
+
+    <button type="button" onclick="hideDateTime()">Undo</button>
+    <hr>
+
+    <h2><u>Why Study JavaScript?</u></h2>
+    <p1>JavaScript is one of the <b>3 languages</b> all web developers <b>must</b> learn:
+    <ol>
+        <li><b><u>HTML</u></b> - Define content of web pages</li>
+        <br>
+        <li><b><u>CSS</u></b> - Specify the layout of web pages</li>
+        <br>
+        <li><b><u>JavaScript</u></b> - Program the behaviour of webpages</li>
+    </ol>
+    </p1>
+    <hr>
+
+    <h2>JavaScript Introduction</h2>
+    <p1>JavaScript Can Change HTML Content and accepts both double and single quotes</p1>
+    <br>
+    <br>
+    <p1>One of the many JavaScript HTML methods is <i>getElementById()</i></p1>
+    <br>
+    <br>
+    <p1>Looking at the example below, you are telling it to find an HTML element (with the id = "demo" ) <br> and change that element content (the inner HTML) to "Hello JavaScript":</p1>
+    <br>
+    <br>  
+
+    &#8627;
+   
+    <p1>document.<i>getElementById</i>("demo").innerHTML = "Hello JavaScript";</p1>
+    <br>
+
+    <h3>Look Below To See This In Action</h3>
+    <p3 id="example">JavaScript can change HTML content.</p3>
+    <br>
+    <br>
+    <button type="button" onclick="changeText()">Click Me!</button>
+
+    <button type="button" onclick="originalText()">Go Back!</button>
+    <br>
+    <br>
+    <br>
+
+    <h3>JavaScript Can Change HTML Attribute Values</h3>
+
+    <p1>Looking at the example below, we can change the value of the src (source) attribute of an img tag:</p1>
+    <br>
+    <button type="button" onclick="lightON()">Turn Light On</button>
+
+    <img id="myImage" src="/images/pic_bulboff.gif" style="width: 100px;">
+
+    <button type="button" onclick="lightOFF()">Turn Light Off</button>
+    <br>
+    <br>
+    <br>
+
+    <h3>JavaScript Can Change HTML Styles (CSS)</h3>
+
+    <p1>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p1>
+    <br>
+    <br>
+
+    <p3 id="bigger">JavaScript can change the style of an HTML element.</p3>
+    <br>
+    <br>
+    <button type="button" onclick="bigFONT()">Increase My Size!</button>
+    <br>
+    <br>
+
+    <button type="button" onclick="smFONT()">Return To Normal!</button>
+    <br>
+    <br>
+    <br>
+
+    <h3>JavaScript Can Hide HTML Elements</h3>
+
+    <p1>Hiding HTML Elements can be done by changing the display style:</p1>
+    <br>
+    <br>
+
+    <p3 id="hide">JavaScript can hide HTML elements.</p3>
+    <br>
+    <br>
+    <button type="button" onclick="hideME()">Hide Me!</button>
+
+    <button type="button" onclick="originalME()">I'm Back!</button>
+    <br>
+    <br>
+    <br>
+
+    <h3>JavaScript Can Show HTML Elements</h3>
+
+    <p1>Showing hidden HTML Elements can also be done by changing the display style:</p1>
+    <br>
+    <br>
+
+    <p3> JavaScript can show hidden HTML elements.</p3>
+    <br>
+    <br>
+    <p3 id="show" style="display: none;">Hello Javascript!</p3>
+    <br>
+    <button type="button" onclick="showME()">Show Me!</button>
+
+    <button type="button" onclick="hiddenME()">Say Goodbye!</button>
+    <hr>
+
+    <h2>JavaScript "Where To's"</h2>
+
+    <p3>JavaScript code is inserted between script tags, and should <b>ALWAYS</b> be placed at the bottom before the closing of your body tag.</p3>
+    <br>
+    <br>
+
+    <h3>JavaScript Functions and Events</h3>
+
+    <p3>A JavaScript <b>function</b> is a block of JavaScript code, that can be executed when "called" for.</p3>
+    <br>
+    <br>
+    <p3>For example, a function can be called when an <b>event</b> occurs, like when the user clicks a button.</p3>
+    <br>
+    <br>
+
+    <h3>External JavaScript</h3>
+
+    <p3>Your JavaScript can be placed in files that have the extension .js, and linked to your page.</p3>
+    <br>
+    <br>
+    <p3>Useful when the same code is used in many different web pages.</p3>
+    <br>
+    <br>
+    <p3>External JavaScript Advantages:</p3>
+    <ol>
+        <ul><li>Separates HTML and Code</li></ul>
+        <ul><li>Makes HTML and JavaScript easier to read and maintain</li></ul>
+        <ul><li>Cached JavaScript files can speed up page loads</li></ul>
+    </ol>
+    <br>
+
+    <p3>To add several script files to one page - use several script tags:</p3><br>
+    <p3>script src = " myScript1.js "</p3>
+    <br>
+    <p3>script src = " myScript2.js "</p3>
+    <br>
+    <br>
+
+    <h3>External References</h3>
+
+    <p3>An external script can be refrenced in 3 different ways:</p3>
+    <ol>
+        <ul><li>Full URL (full web address)</li></ul>
+        <ul><li>File Path (like linking .js)</li></ul>
+        <ul><li>No Path</li></ul>
+    </ol>
+
+    <p3>An example that uses a <b>Full URL</b> to link to myScript.js:</p3><br>
+    <br>
+
+    &#8627;
+    <p3>script src = "https://www.w3schools.com/js/myScript.js"</p3>
+    <br>
+    <br>
+    <br>
+
+    <p3>An example that uses a <b>File Path</b> to link to myScript.js:</p3><br>
+    <br>
+
+    &#8627;
+    <p3>script src = "/ js / myScript.js"</p3>
+    <br>
+    <br>
+    <br>
+
+    <p3>An example that uses a <b>No Path</b> to link to myScript.js:</p3><br>
+    <br>
+
+    &#8627;
+    <p3>script src = "myScript.js"</p3>
+    <hr>
+
+    <h2>JavaScript Output</h2>
+
+    <h3>JavaScript Display Possibilities</h3>
+
+    <p3>JavaScript can display data in different ways:</p3>
+
+    <ol>
+        <ul><li>Writing into an HTML element using <i>innerHTML</i></li></ul>
+        <ul><li>Writing into the HTML output using <i>document.write( )</i></li></ul>
+        <ul><li>Writing into an alert box using <i>window.alert( )</i></li></ul>
+        <ul><li>Writing into the browser console using <i>console.log( )</i></li></ul>
+    </ol>
+    <br>
+
+    <h3>Using innerHTML</h3>
+
+    <p3>JavaScript can use the <i>document.getElementById</i> method to access an HTML element.</p3>
+    <br>
+    <br>
+
+    <p3>The id attribute defines the HTML element.</p3>
+    <br>
+    <br>
+
+    <p3>The <i>innerHTML</i> property defines the HTML content.</p3>
+
+    <h5>Look Below To See This In Action:</h5>
+    <p3>I am going to add 6 + 6 without showing the calculations on the page, and the answer will appear below.</p3>
+    <br>
+    <br>
+
+    &#8627;
+    <p3 id="add"></p3>
+    <br>
+    <br>
+
+    <h3>Using document.write( )</h3>
+
+    <p3><b>***</b> Using <i>document.write( )</i> after an HTML document is loaded, will <b>delete all existing HTML!</b></p3>
+    <br>
+    <br>
+    <p3><b>Never</b> call document.write after the document has finished loading because it will overwrite the entire document.</p3>
+    <br>
+    <p3><b>The document.write( ) method <u>should only</u> be used for testing.</b></p3>
+    <br>
+    <br>
+
+    <h3>Using window.alert ( )</h3>
+
+    <p3>You can use an alert box to display data.</p3>
+    <br>
+    <p3>Specifying the window keyword is optional because in JavaScript the window object is the global scope object.<br> JavaScript is an "Object-Based" Programming, Scripting Language.<br>
+    This means that variables, properties, and default methods belong to the window object.</p3>
+    <br>
+
+    <p3 id="alert"></p3>
+    <br>
+    <br>
+    
+    <h3>Using console.log ( )</h3>
+
+    <p3>Debugging you can call the console.log method in the browser by pressing F12 when using Google Chrome to display data.
+    <br>
+    Then select "Console" in the debugger menu.
+    <br>
+    Click Run again to view.
+    </p3>
+    <br>
+    <br>
+
+    <h3>Using JavaScript Print</h3>
+
+    <p3>JavaScript does not have any print object or printing methods</p3>
+    <br>
+    <br>
+    <p3>There is no access output devices from JavaScript</p3>
+    <br>
+    <br>
+    <p3>The <b>only</b> exception is that you can call the window.print ( ) method in the browser to print the content of the current window:</p3>
+    <br>
+    <br>
+    <p3><i>Click the button below to print the current page.</i></p3>
+    <br>
+    <br>
+    <button type="button" onclick="window.print()">Print This Page</button>
+    <hr>
+
+    <h2>JavaScript Programs</h2>
+
+    <p3>A <b>Computer Program</b> is a list of "instructions" to be "executed" by a computer.</p3>
+    <br>
+    <br>
+    <p3>In a programming language, these programming instructions are called <b>statements.</b></p3>
+    <br>
+    <br>
+    <p3>A<b> JavaScript Program</b> is a list of programming <b>statements</b></p3>
+    <br>
+    <br>
+    <p3><i>(In HTML JavaScript programs are executed by the web browser.)</i></p3>
+    <br>
+    <br>
+
+
+
+    <h2>JavaScript Statements</h2>
+
+    <p3>A <b>JavaScript Program</b> is a list of <b><i>statements</i></b> to be executed by a computer.</p3>
+    <br>
+    <br>
+    <p3>I have written statements in my .js file that you will not see on here, to produce the calculation and show the value of z.</p3>
+    <br>
+    <br>
+    <p3 id="statements"></p3>
+    <br>
+    <br>
+    <p3><u>The above value shown was written as the following in my .js file, hidden where the user will not see the calculation:</u> <br>
+    let x, y z; //statement 1 <br>
+    x = 5; //statement 2<br>
+    y = 6; //statement 3<br>
+    z = x + y; //statement 4<br>
+    <br>
+    Followed by more .js code written as:<br>
+    document . getElementById ("statements") . innerHTML = "The value of z is " + z + ".";
+    </p3>
+    <br>
+    <br>
+    <br>
+
+    <h4>JavaScript statements are composed of:</h4>
+    <ol>
+        <ul><li>Values</li></ul>
+        <ul><li>Operators</li></ul>
+        <ul><li>Expressions</li></ul>
+        <ul><li>Keywords</li></ul>
+        <ul><li>Comments</li></ul>
+    </ol>
+    <br>
+
+    <p3>This statement tells the browser to write "Hello Dolly" inside an HTML element with the id="hello"<br>
+    <br>
+        document. getElementById("hello") .innerHTML = "Hello Dolly"; <br>
+    <br>
+        Which you can see below in the example written:
+    </p3>
+    <br>
+    <br>
+    <p3 id="hello"></p3>
+    <br>
+    <br>
+    <br>
+
+    <p3>Most JavaScript programs contain many JavaScript statements, <br> 
+        and they are executed one by one, in sequential order, the same as they are written.</p3>
+    <br>    
+    <br>
+    <p3>JavaScript programs (and JavaScript statements) are often called <i>JavaScript Code.</i></p3>
+    <br>
+    <br>
+    <br>
+
+    <h4>Semicolons ;</h4>
+
+    <p3>JavaScript statements are separated by semicolons.<br>
+    
+    Add a semicolon at the end of each executable statement. It is not required, but recommended.<br>
+
+    When separated by semicolons, multiple statements on one line are allowed.</p3>
+    <br>
+    <br>
+    <br>
+
+    <h4>JavaScript White Space</h4>
+
+    <p3>JavaScript ignores multiple spaces.<br>
+    
+    You can add white space to your script to make it more readable but they are equivalent:<br>
+    <br>
+    let person = "Amber" <br>
+    let person="Amber"</p3>
+    <br>
+    <br>
+
+    <p3>A good practice is to put spaces around operators ( = + - * / ): <br>
+    <br>
+    let x = y + z;</p3>
+    <br>
+    <br>
+    <br>
+
+    <h4>JavaScript Line Length and Line Breaks</h4>
+
+    <p3>Best readability => avoiding code lines longer than 80 characters. <br>
+    <br>
+
+    If a JavaScript statement does not fit on one line, the best place to break it is after a comma, or an operator : <br>
+    <br>
+
+    <i>For Example:</i><br>
+    <br>
+    document.getElementById("test").innerHTML=<br>
+    "Hello Dolly";</p3>
+    <br>
+    <br>
+    <br>
+
+    <h4>JavaScript Code Blocks</h4>
+
+    <p3>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}<br>
+    
+    Code blocks define statements to be executed together.<br>
+    <br>
+    One place to find statements grouped together in blocks, is in JavaScript functions producing the result below:</p3>
+    <br>
+    <br>
+    <button type="button" onclick="codeBlock()">Try Me!</button>
+    <br>
+    <br>
+    <p3 id="demo1"></p3>
+    <br>
+
+    <br>
+    <p3 id="demo2"></p3>
+    <br>
+    <br>
+    <button type="button" onclick="codeBlockoff()">Back!</button>
+    <hr>
+
+    <h2>JavaScript Syntax</h2>
+
+<div class="w3-info">
+    <p3> JavaScript Syntax is the set of rules, how JavaScript programs are constructed:</p3>
+    <div class="w3-code w3-large w3-border">
+        <span class="jscolor" style="color: black;">
+            <span class="jsnumbercolor" style="color: red"></span>
+
+            <span class="commentcolor" style="color: green">
+            //How to create variables:
+            <br>
+            </span>
+
+            <span class="jskeywordcolor" style="color: mediumblue"> var</span>
+            x;
+            <br>
+
+            <span class="jskeywordcolor" style="color: mediumblue"> let</span>
+            y;
+            <br>
+            <span class="jsnumbercolor" style="color: red"></span>
+            <br>
+            <span class="jsnumbercolor" style="color: red"></span>
+
+            <span class="commentcolor" style="color: green">
+            //How to use variables:
+            <br>
+            </span>
+            x = 
+            <span class="jsnumbercolor" style="color: red">5</span>
+            ;
+            <br>
+            y = 
+            <span class="jsnumbercolor" style="color: red">6</span>
+            ;
+            <br>
+            <span class="jskeywordcolor" style="color: mediumblue"> let</span>
+            z = x + y;
+        </span>
+    </div>
+</div>
+<br>
+
+<h2>JavaScript Values</h2>
+
+<p3>The JavaScript syntax defines two types of values:</p3>
+
+<ol>
+    <ul><li>Fixed Values</li></ul>
+    <ul><li>Variable Values</li></ul>
+</ol>
+<br>
+
+<p3>Fixed values are called <b>Literals.</b></p3>
+<br>
+<br>
+<p3>Variable values are called <b>Variables.</b></p3>
+<br>
+<br>
+
+<h3>JavaScript Literals</h3>
+<p3>The two most important syntax rules for fixed values are:</p3>
+
+<ol>
+    <li><b>Numbers</b> are written with or without decimals.</li>
+    <li><b>Strings</b> are text, written within double or single quotes.</li>
+</ol>
+<br>
+
+<h3>JavaScript Variables</h3>
+<p3>In a programming language, variables are used to <b>store</b> data values.</p3>
+<br>
+<br>
+
+<p3>JavaScript uses the keywords var, let, and const to <b>declare</b> variables.</p3>
+<br>
+<br>
+
+<p3>An = sign is used to <b>assign values</b> to variables.</p3>
+<br>
+<br>
+
+<p3>In this example, f is defined as a variable. Then f is given the value of 6:</p3>
+<br>
+<br>
+
+<span class="jskeywordcolor" style="color: mediumblue"> let</span>
+f;
+<br>
+<br>
+f = 
+<span class="jsnumbercolor" style="color: red">6</span>
+;
+<br>
+<p id="value"></p>
+
+<br>
+<p3>Written in .js file it would look something like this to produce a calculation behind the scenes:
+<br>
+<br>
+let f; <br>
+f = 6; <br>
+document.getElementById("value").innerHTML = f;
+</p3>
+<br>
+<br>
+
+<h3>JavaScript Operators</h3>
+<p3>JavaScript uses <b>arithmetic operators</b> ( + - * / ) to <b>compute</b> values (just like algebra):</p3>
+
+(
+    <span class="jsnumbercolor" style="color: red">5</span>
++
+    <span class="jsnumbercolor" style="color: red">6</span>
+)
+*
+<span class="jsnumbercolor" style="color: red">10</span>
+<br>
+
+<p id="operators"></p>
+
+
+    <script src="/Learn-js/my-script.js"></script>
+</body>
+</html>
