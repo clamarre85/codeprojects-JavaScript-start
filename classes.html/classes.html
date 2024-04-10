@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Classes</h1>
+
+    <div id="myCarContainer1"></div>
+    <div id="myCarContainer2"></div>
+    <div id="myCarContainer3"></div>
+
+    <hr />
+
+    <p id="demo"></p>
+    <script>
+      class Car {
+        constructor(model, color, maker, maxSpeed, year) {
+          this.model = model;
+          this.color = color;
+          this.maker = maker;
+          this.maxSpeed = maxSpeed;
+          this.year = year;
+        }
+
+        showCarDetails() {
+          console.log(
+            "My Cars " +
+              this.maker +
+              "is a " +
+              this.model +
+              "\nThe year was made in : " +
+              this.year +
+              "\n its color is :" +
+              this.color +
+              "\nwith a max speed of " +
+              this.maxSpeed
+          );
+        }
+
+        age() {
+          const date = new Date();
+          return date.getFullYear() - this.year;
+        }
+
+        accelerate() {}
+      }
+
+      const myHonda = new Car("CR-V", "White", "Honda", "180", "2022");
+
+      let html = `<h2> ${myHonda.maker}</h2>
+        <h3>Year : ${myHonda.year}</h3>
+      <h3>Color : ${myHonda.color}</h3>
+      <h3>Max Speed : ${myHonda.maxSpeed}</h3>
+      <h3>Age of my Car : ${myHonda.age()} years</h3>
+
+
+        `;
+
+      const myMazda = new Car("sp", "red", "Mazda", "190", "2023");
+
+      let html2 = `<hr><h2> ${myMazda.maker}</h2>
+        <h3>Year : ${myMazda.year}</h3>
+      <h3>Color : ${myMazda.color}</h3>
+      <h3>Max Speed : ${myMazda.maxSpeed}</h3>
+      <h3>Age of my Car : ${myMazda.age()} years</h3>
+
+
+        `;
+
+      const myBMW = new Car("xyz", "Blue", "BMW", "250", "2021");
+      let html3 = `<hr><h2> ${myBMW.maker}</h2>
+        <h3>Year : ${myBMW.year}</h3>
+      <h3>Color : ${myBMW.color}</h3>
+      <h3>Max Speed : ${myBMW.maxSpeed}</h3>
+      <h3>Age of my Car : ${myBMW.age()} years</h3>
+
+
+        `;
+
+      document.getElementById("myCarContainer1").innerHTML = html;
+
+      document.getElementById("myCarContainer2").innerHTML = html2;
+      document.getElementById("myCarContainer3").innerHTML = html3;
+
+      myHonda.model.age();
+
+      myMazda.showCarDetails();
+
+      myBMW.showCarDetails();
+
+      class Pen {
+        constructor() {}
+
+        showPrice() {}
+      }
+
+      const myPen = new Pen();
+
+      myPen.showPrice();
+    </script>
+  </body>
+</html>
