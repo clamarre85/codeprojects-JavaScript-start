@@ -1,0 +1,40 @@
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  list-style-type: none;
+  padding: 20px;
+  font-family: cursive;
+  border-top: dotted;
+  border-color: darkgray;
+  position: relative;
+}
+
+.list li .fa-trash {
+  color: red;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li .fa-check-square {
+  color: green;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+  color: darkgray;
+}
