@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(237, 245, 245);
+}
+
+.container {
+    height: 50%;
+    width: 50% ;
+    margin: auto;
+    padding: 5px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+
+.interest-rate {
+margin: auto;
+padding: 5px;
+
+}
+
+.months-to-pay{
+margin: auto;
+padding: 5px;
+}
+
+.monthly-payment {
+    padding: 5px;
+}
