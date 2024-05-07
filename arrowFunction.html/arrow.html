@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript Functions</h1>
+    <h2>The Arrow Function</h2>
+
+    <p>
+      This example shows the syntax of an Arrow Function, and how to use it.
+    </p>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+    <script>
+      // Create an object:
+      const person = {
+        firstName: "Amber",
+        lastName: " Doe",
+        id: 5566,
+        cellNo: 647123456789,
+        fullName: function () {
+          return this.firstName + this.lastName;
+        },
+      };
+
+      //let FullName = person.firstName + " " + person.lastName;
+
+      console.log(person.fullName());
+
+      // Display data from the object:
+      //document.getElementById("demo").innerHTML = person.fullName();
+
+      /*   
+      function add() {
+        return 5 + 6;
+      }
+
+      document.getElementById("demo").innerHTML = add();
+
+      //let variableName = () => null;
+      let arrowAddNumbers = () => 5 + 5;
+
+      document.getElementById("demo1").innerHTML = arrowAddNumbers();
+*/
+
+      /*
+
+let myFunction = (a, b) => a * b;
+      document.getElementById("demo").innerHTML = myFunction(4, 5);
+
+      */
+    </script>
+  </body>
+</html>
